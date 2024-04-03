@@ -1,0 +1,435 @@
+/* Tipografias*/
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/*---------------------------------------------------- General ----------------------------------------------------*/
+*{
+    display: grid ;
+    margin: 0px;
+    padding-left: 2px;
+}
+body{
+    background-color: #222222;
+    color: white;
+    padding: 25px;
+}
+
+body h1{
+    color: yellow;
+    padding-bottom: 50px;
+    font-family: Jost;
+    text-align: center;
+}
+/* ---------------------------------------------------- Menu ----------------------------------------------------*/
+body div.menu ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-family: Jost;
+    padding-left: 13%;
+    padding-right: 13%;
+    padding-bottom: 10px;
+}
+
+/*---------------------------------------------------- Taula Periodica ----------------------------------------------------*/
+div.taula-periodica {
+    font-family: Victor Mono;
+}
+
+/*---------------------------------------------------- Elements ----------------------------------------------------*/
+div.elements {
+    text-align: center;
+    color: black;
+    padding: 10px; 
+    gap: 5px;
+}
+div.elements div{
+    border-radius: 10px;
+    width: 100px;
+}
+/*Background colors Elements */
+div.elements div:nth-child(-n+3) {
+    background-color: #3DCC00;
+}
+div.elements div:nth-child(n+4):nth-child(-n+8){
+    background-color: #CDCC02;
+}
+div.elements div:nth-child(n+9):nth-child(-n+22){
+    background-color: #DCBABB;
+}
+div.elements div:nth-child(n+23):nth-child(-n+46) {
+    background-color: #F8999B;
+}
+div.elements div:nth-child(n+47):nth-child(-n+58) {
+    background-color: #99DDCC;
+}
+div.elements div:nth-child(n+59):nth-child(-n+68) {
+    background-color: #76DC88;
+}
+div.elements div:nth-child(n+69):nth-child(-n+82) {
+    background-color: #4DEECD;
+}
+div.elements div:nth-child(n+83):nth-child(-n+87) {
+    background-color: #77CCFF;
+}
+div.elements div:nth-child(n+88):nth-child(-n+90) {
+    background-color: #6496EE;
+}
+/*---------------------------------------------------- Estructura elements ----------------------------------------------------*/
+div.elements div:nth-child(1){
+    grid-area: 1 / 1 / 1 / 1; 
+}
+div.elements div:nth-child(2){
+    grid-area: 2 / 1 / 2 / 1;
+}
+div.elements div:nth-child(3){
+    grid-area: 3 / 1 / 4 / 1;
+}
+div.elements div:nth-child(4){
+    grid-area: 4 / 1 / 5 / 1;
+}
+div.elements div:nth-child(5){
+    grid-area: 5 / 1 / 6 / 1;
+}
+div.elements div:nth-child(6){
+    grid-area: 6 / 1 / 7 / 1;
+}
+div.elements div:nth-child(7){
+    grid-area: 7 / 1 / 8 / 1;
+}
+div.elements div:nth-child(8){
+    grid-area: 2/ 2 / 2 / 2;
+}
+div.elements div:nth-child(9){
+    grid-area: 3 / 2 / 4 / 2;
+    
+}
+div.elements div:nth-child(10){
+    grid-area: 4 / 2 / 5 / 2;
+    
+}
+div.elements div:nth-child(11){
+    grid-area: 5 / 2 / 6 / 2;
+    
+}
+div.elements div:nth-child(12){
+    grid-area: 6 / 2 / 7 / 2;
+    
+}
+div.elements div:nth-child(13){
+    grid-area: 7 / 2 / 8 / 2;
+    
+}
+div.elements div:nth-child(14){
+    grid-area: 4 / 3 / 4 / 3;
+    
+}
+div.elements div:nth-child(15){
+    grid-area: 5 / 3 / 6 / 3;
+    
+}
+div.elements div:nth-child(16){
+    grid-area: 6 / 3 / 7 / 3;
+    
+}
+div.elements div:nth-child(17){
+    grid-area: 7 / 3 / 8 / 3;
+    
+}
+div.elements div:nth-child(18){
+    grid-area: 4 / 4 / 4 / 4;
+    
+}
+div.elements div:nth-child(19){
+    grid-area: 5 / 4 / 6 / 4;
+    
+}
+div.elements div:nth-child(20){
+    grid-area: 6 / 4 / 7 / 4;
+    
+}
+div.elements div:nth-child(21){
+    grid-area: 7 / 4 / 8 / 4;
+    
+}
+div.elements div:nth-child(22){
+    grid-area: 4 / 5 / 4 / 5;
+    
+}
+div.elements div:nth-child(23){
+    grid-area: 5 / 5 / 6 / 5;
+    
+}
+div.elements div:nth-child(24){
+    grid-area: 6 / 5 / 7 / 5;
+    
+}
+div.elements div:nth-child(25){
+    grid-area: 7 / 5 / 8 / 5;
+    
+}
+div.elements div:nth-child(26){
+    grid-area: 4 / 6 / 4 / 6;
+    
+}
+div.elements div:nth-child(27){
+    grid-area: 5 / 6 / 6 / 6;
+    
+}
+div.elements div:nth-child(28){
+    grid-area: 6 / 6 / 7 / 6;
+    
+}
+div.elements div:nth-child(29){
+    grid-area: 7 / 6 / 8 / 6;
+    
+}
+div.elements div:nth-child(30){
+    grid-area: 4 / 7 / 4 / 7;
+    
+}
+div.elements div:nth-child(31){
+    grid-area: 5 / 7 / 6 / 7;
+    
+}
+div.elements div:nth-child(32){
+    grid-area: 6 / 7 / 7 / 7;
+    
+}
+div.elements div:nth-child(33){
+    grid-area: 7 / 7 / 8 / 7;
+    
+}
+div.elements div:nth-child(34){
+    grid-area: 4 / 8 / 4 / 8;
+    
+}
+div.elements div:nth-child(35){
+    grid-area: 5 / 8 / 6 / 8;
+    
+}
+div.elements div:nth-child(36){
+    grid-area: 6 / 8 / 7 / 8;
+    
+}
+div.elements div:nth-child(37){
+    grid-area: 7 / 8 / 8 / 8;
+    
+}
+div.elements div:nth-child(38){
+    grid-area: 4 / 9 / 4 / 9;
+    
+}
+div.elements div:nth-child(39){
+    grid-area: 5 / 9 / 6 / 9;
+    
+}
+div.elements div:nth-child(40){
+    grid-area: 6 / 9 / 7 / 9;
+    
+}
+div.elements div:nth-child(41){
+    grid-area: 7 / 9 / 8 / 9;
+    
+}
+div.elements div:nth-child(42){
+    grid-area: 2 / 10 / 2 / 10;
+    
+}
+div.elements div:nth-child(43){
+    grid-area: 3 / 10 / 4 / 10;
+    
+}
+div.elements div:nth-child(44){
+    grid-area: 4 / 10 / 5 / 10;
+    
+}
+div.elements div:nth-child(45){
+    grid-area: 5 / 10 / 6 / 10;
+    
+}
+div.elements div:nth-child(46){
+    grid-area: 6 / 10 / 7 / 10;
+    
+}
+div.elements div:nth-child(47){
+    grid-area: 7 / 10 / 8 / 10;
+    
+}
+div.elements div:nth-child(48){
+    grid-area: 2 / 11 / 2 / 12;
+}
+div.elements div:nth-child(49){
+    grid-area: 3 / 11 / 4 / 11;
+}
+div.elements div:nth-child(50){
+    grid-area: 4 / 11 / 5 / 11;
+}
+div.elements div:nth-child(51){
+    grid-area: 5 / 11 / 6 / 11;
+}
+div.elements div:nth-child(52){
+    grid-area: 6 / 11 / 7 / 11;
+}
+div.elements div:nth-child(53){
+    grid-area: 7 / 11 / 8 / 11;
+}
+div.elements div:nth-child(54){
+    grid-area: 2 / 12 / 2 / 12;
+}
+div.elements div:nth-child(55){
+    grid-area: 3 / 12 / 4 / 12;
+}
+div.elements div:nth-child(56){
+    grid-area: 4 / 12 / 5 / 12;
+}
+div.elements div:nth-child(57){
+    grid-area: 5 / 12 / 6 / 12;
+}
+div.elements div:nth-child(58){
+    grid-area: 6 / 12 / 7 / 12;
+}
+div.elements div:nth-child(59){
+    grid-area: 7 / 12 / 8 / 12;
+}
+div.elements div:nth-child(60){
+    grid-area: 2 / 13 / 2 / 13;
+}
+div.elements div:nth-child(61){
+    grid-area: 3 / 13 / 4 / 13;
+}
+div.elements div:nth-child(62){
+    grid-area: 4 / 13 / 5 / 13;
+}
+div.elements div:nth-child(63){
+    grid-area: 5 / 13 / 6 / 13;
+}
+div.elements div:nth-child(64){
+    grid-area: 6 / 13 / 7 / 13;
+}
+div.elements div:nth-child(65){
+    grid-area: 7 / 13 / 8 / 13;
+}
+div.elements div:nth-child(66){
+    grid-area: 2 / 14 / 2 / 14;
+}
+div.elements div:nth-child(67){
+    grid-area: 3 / 14 / 4 / 14;
+}
+div.elements div:nth-child(68){
+    grid-area: 4 / 14 / 5 / 14;
+}
+div.elements div:nth-child(69){
+    grid-area: 5 / 14 / 6 / 14;
+}
+div.elements div:nth-child(70){
+    grid-area: 6 / 14 / 7 / 14;
+}
+div.elements div:nth-child(71){
+    grid-area: 7 / 14 / 8 / 14;
+}
+div.elements div:nth-child(72){
+    grid-area: 2 / 15 / 2 / 15;
+}
+div.elements div:nth-child(73){
+    grid-area: 3 / 15 / 4 / 15;
+}
+div.elements div:nth-child(74){
+    grid-area: 4 / 15 / 5 / 15;
+}
+div.elements div:nth-child(75){
+    grid-area: 5 / 15 / 6 / 15;
+}
+div.elements div:nth-child(76){
+    grid-area: 6 / 15 / 7 / 15;
+}
+div.elements div:nth-child(77){
+    grid-area: 7 / 15 / 8 / 15;
+}
+div.elements div:nth-child(78){
+    grid-area: 2 / 16 / 2 / 16;
+}
+div.elements div:nth-child(79){
+    grid-area: 3 / 16 / 4 / 16;
+}
+div.elements div:nth-child(80){
+    grid-area: 4 / 16 / 5 / 16;
+}
+div.elements div:nth-child(81){
+    grid-area: 5 / 16 / 6 / 16;
+}
+div.elements div:nth-child(82){
+    grid-area: 6 / 16 / 7 / 16;
+}
+div.elements div:nth-child(83){
+    grid-area: 7 / 16 / 8 / 16;
+}
+div.elements div:nth-child(84){
+    grid-area: 1 / 17 / 1 / 17;
+}
+div.elements div:nth-child(85){
+    grid-area: 2 / 17 / 2 / 17;
+}
+div.elements div:nth-child(86){
+    grid-area: 3 / 17 / 4 / 17;
+}
+div.elements div:nth-child(87){
+    grid-area: 4 / 17 / 5 / 17;
+}
+div.elements div:nth-child(88){
+    grid-area: 5 / 17 / 6 / 17;
+}
+div.elements div:nth-child(89){
+    grid-area: 6 / 17 / 7 / 17;
+}
+div.elements div:nth-child(90){
+    grid-area: 7 / 17 / 8 / 17;
+}
+
+
+/* ---------------------------------------------------- Semantics ---------------------------------------------------- */ 
+div.lantanids{
+    display: grid;
+    border-radius: 10px;
+}
+div.semantics {
+    text-align: center;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    
+}
+div.semantics div{
+    border-radius: 10px;
+    width: 100px;
+}
+/*---------------------------------------------------- Estructura elements ----------------------------------------------------*/
+div.semantics div:nth-child(n+1):nth-child(-n+12) {
+    color: blue;
+    grid-row: 1;
+}
+div.semantics div:nth-child(3) {
+    background-color: #FEFF44;
+}
+
+/*---------------------------------------------------- Background color Lantanids ----------------------------------------------------*/
+div.semantics div:nth-child(-n+15){
+    background-color: #FEFF44;
+}
+div.semantics div:nth-child(n+16):nth-child(-n+22){
+    background-color: #F9BB99;
+}
+div.semantics div:nth-child(n+23):nth-child(-n+25){
+    background-color: #FAC0CB;
+}
+
+/*Obsolet*/
+div.obsolets{
+    display: grid;
+    align-items: center;
+    color: white q q;
+    padding: 10px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
