@@ -4,18 +4,18 @@
 
 /*---------------------------------------------------- General ----------------------------------------------------*/
 *{
-    display: grid ;
     margin: 0px;
     padding-left: 2px;
 }
 body{
+    display: grid;
     background-color: #222222;
     color: white;
-    padding: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 body h1{
-    color: yellow;
     padding-bottom: 50px;
     font-family: Jost;
     text-align: center;
@@ -38,6 +38,7 @@ div.taula-periodica {
 
 /*---------------------------------------------------- Elements ----------------------------------------------------*/
 div.elements {
+    display: grid;
     text-align: center;
     color: black;
     padding: 10px; 
@@ -387,33 +388,30 @@ div.elements div:nth-child(90){
 }
 
 
-/* ---------------------------------------------------- Semantics ---------------------------------------------------- */ 
-div.lantanids{
-    display: grid;
-    border-radius: 10px;
-}
-div.semantics {
-    text-align: center;
+/* ---------------------------------------------------- Lantanids ---------------------------------------------------- */ 
+
+div.lantanids div{
     color: black;
-    padding: 10px;
+    border-radius: 10px;
+    width: 98px;
+    height: 95px;
+    gap: 10px;
     text-align: center;
-    border-radius: 10px;
-    
 }
-div.semantics div{
-    border-radius: 10px;
-    width: 100px;
+div.lantanids {
+    margin-top: 50px;
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
 }
-/*---------------------------------------------------- Estructura elements ----------------------------------------------------*/
+/*---------------------------------------------------- Estructura Semantics ----------------------------------------------------*/
 div.semantics div:nth-child(n+1):nth-child(-n+12) {
-    color: blue;
     grid-row: 1;
 }
 div.semantics div:nth-child(3) {
     background-color: #FEFF44;
 }
-
-/*---------------------------------------------------- Background color Lantanids ----------------------------------------------------*/
+/*---------------------------------------------------- Background color Semantics ----------------------------------------------------*/
 div.semantics div:nth-child(-n+15){
     background-color: #FEFF44;
 }
@@ -424,12 +422,26 @@ div.semantics div:nth-child(n+23):nth-child(-n+25){
     background-color: #FAC0CB;
 }
 
-/*Obsolet*/
-div.obsolets{
+/*---------------------------------------------------- Obsolets ----------------------------------------------------*/
+div.semantics {
     display: grid;
-    align-items: center;
-    color: white q q;
-    padding: 10px;
-    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    width: 70%;
+}
+div.obsolets {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    padding-right: 28%;
+}
+div.obsolets div{
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    color: black;
+    background-color: #9C9C9C;
 }
