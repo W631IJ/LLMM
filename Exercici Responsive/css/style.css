@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;700&display=swap');
+
+*{
+    font-family: Roboto Slab, sans-serif;
+    box-sizing: 0;
+    padding: 0;
+}
+body{
+    background-color: #d3d3d1;
+    margin: 10px;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1 1fr;
+    gap: 10px;
+    padding-bottom: 50px;
+}
+
+/* header */
+header{
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 2%;
+}
+nav ul li{
+    list-style: none;
+    justify-content: center;
+    margin-top: 2%;
+    padding-left: 35%;
+    padding-right: 35%;
+}
+nav ul li a{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-decoration: none;
+    color: white;
+    background-color: #ffa500;
+    padding: 2px;
+    border-radius: 5px;
+}
+/*Main*/
+main{
+    background-color: white;
+    border-radius: 5px;
+}
+main h2{
+    text-align: center;
+}
+main article{
+    background-color: #fdebd2;
+    margin: 4%;
+    padding: 2%;
+    border-radius: 5px;
+}
+
+/*footer*/
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+/* Responsive */
+@media (min-width: 641px) {
+
+    header h1{
+        text-align: left;
+    }
+    header>nav>ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    header>nav>ul>li {
+        margin: 12px;
+        border-radius: 5px;
+        padding: 5px;
+        text-align: center;
+        background-color: orange;
+    }
+
+    main:nth-child(n+2):nth-child(-n+4){
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr) ;
+    }
+
+    main:nth-child(2){
+        grid-column-start: 0;
+        grid-column-end: 1;
+    }
+
+
+
+        
+        
+}
