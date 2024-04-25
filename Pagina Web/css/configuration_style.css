@@ -1,0 +1,122 @@
+* {
+    margin: 0px;
+    padding: 1px;
+    box-sizing: border-box;
+    gap: 30px;
+}
+/*--------------------------------------------Header---------------------------------*/
+header {
+    background-color: wheat;
+    width: 100%;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 50px;
+    color: #000;
+}
+
+ul {
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px;
+    width: 120px;
+    height: 30px;
+    border: 1px solid #000;
+    color: #fff;
+    background-color: #000;
+}
+
+li a:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+/*ESta parte sirve para hcer el menú desplegable */
+nav li ul {
+    display: none;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+nav li:hover ul {
+    display: block;
+}
+
+
+/* ----------------------------------------- Main -----------------------------*/
+body {
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    padding: 25px;
+    border-radius: 25px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 50px;
+}
+form {
+    width: 80%;
+    margin: 50px auto;
+}
+
+label {
+    display: block;
+    margin: 20px 0 10px;
+}
+
+input[type="number"],
+input[type="color"],
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 200px;
+    height: 40px;
+    margin: 20px auto;
+    background-color: #345995;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #E40066;
+}
+
+/*--------------------------------------------Footer---------------------------------*/
+footer {
+    background-color: wheat;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed ;
+    bottom: 0px;
+    width: 100%;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer div a {
+    color: black;
+    text-decoration: none;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>MasterMind Game</title>
+      <link rel="stylesheet" type="text/css" href="/Pagina Web/css/contact_style.css">
+  </head>
+  <header>
+    <h1>THE MASTERMIND GAME</h1>
+    <nav>
+      <ul>
+        <li><a href="game.html">Game</a></li>
+        <li><a href="help.html">Help</a></li>
+        <li><a href="configuration.html">Mapa</a></li>
+        <li><a href="#">Empresa</a>
+          <ul>
+            <li><a href="contacte.html">Contacto</a></li>
+            <li><a href="mapa.html">Mapa</a></li>
+            <li><a href="others.html">Others</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <form action="contacte.php" method="get">
+    <!--Name-->
+    <label>Name:</label>
+      <input type="text" name="name" required><br><br>
+    <!--Correo-->
+    <label>Email: </label>
+      <input type="email" id="email" name="email" required><br><br>
+    <!--Type-->
+    <label for="type">Tipus:</label><br>
+      <select id="type" name="type" required>
+        <option value="CONSULTA">Consulta</option>
+        <option value="ERROR">Error</option>
+        <option value="MILLORA">Millora</option>
+        <option value="SUBSCRIBE">Subscripció</option>
+      </select>
+      <br>
+      <br>
+    <!--Telefono-->
+      <label>Telf</label>
+        <input type="tel" id="phone" name="phone" placeholder="+34 XXX XX XX XX" pattern="^[0-9]+$"><br><br>
+    <!--Birthday-->
+      <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday">
+        <input type="submit" value="Submit"><br><br>
+    <!--Message-->
+      <label for="message">Missatge:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+    <!--Submit-->
+      <input type="submit" value="Submit" >
+    </form>
+  </main>
+  
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="#">Aviso legal</a>
+      <a href="#">Política de privacidad</a>
+      <a href="#">Términos y condiciones</a>
+    </div>
+  </footer>
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>MasterMind Game</title>
+        <link rel="stylesheet" type="text/css" href="/Pagina Web/css/game_style.css">
+        <link rel="icon" type="image/x-icon" href="/Pagina Web/img/noun-mind-6569122.svg">
+    </head>
+    <header>
+        <h1>THE MASTERMIND GAME</h1>
+        <nav>
+            <ul>
+                <li><a href="game.html">Game</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="configuration.html">Configuration</a></li>
+                <li><a href="#">Empresa</a>
+                    <ul>
+                        <li><a href="contacte.html">Contacto</a></li>
+                        <li><a href="mapa.html">Mapa</a></li>
+                        <li><a href="others.html">Others</a></li>
+                    </ul> 
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <p class="Introduction">
+            ¡Bienvenido a la emocionante aventura del Master Mind! Sumérgete en un desafío mental donde la estrategia y la astucia son tus mejores aliados.<br>
+            En esta página, descubrirás un mundo fascinante de intrigantes combinaciones y colores, donde cada elección cuenta. ¿Tienes lo necesario para descifrar el código secreto?<br>
+            !Prepárate para poner a prueba tu ingenio y disfrutar de horas de diversión estratégica con el juego Master Mind! <br>
+            Aprendete las normas del juego pinchando en este <a href="help.html">aquí</a>.
+        </p>
+        <br>
+        <br>
+        <div class='game'>
+            <div class='top'>
+                <div class='code'>
+                    <span class='color-one'>0</span>
+                    <span class='color-two'>0</span>
+                    <span class='color-three'>0</span>
+                    <span class='color-four'>0</span>
+                </div>
+            </div>
+        
+            <div class='middle'>
+        
+                <div class='grid'>
+                    <div class='dots1'>
+                        <div class='one1'>X</div>
+                        <div class='one2'>X</div>
+                        <div class='one3'>X</div>
+                        <div class='one4'>X</div>
+                    </div>
+                    <div><span class='one-1' id='space'>X</span></div>
+                    <div><span class='one-2' id='space'>X</span></div>
+                    <div><span class='one-3' id='space'>X</span></div>
+                    <div><span class='one-4' id='space'>X</span></div>
+                    <div class='dots2'>
+                        <div class='one1'>X</div>
+                        <div class='one2'>X</div>
+                        <div class='one3'>X</div>
+                        <div class='one4'>X</div>
+                    </div>
+                    <div><span class='two-1' id='space'>X</span></div>
+                    <div><span class='two-2' id='space'>X</span></div>
+                    <div><span class='two-3' id='space'>X</span></div>
+                    <div><span class='two-4' id='space'>X</span></div>
+                    <div class='dots3'>
+                        <div class='one1'>X</div>
+                        <div class='one2'>X</div>
+                        <div class='one3'>X</div>
+                        <div class='one4'>X</div>
+                    </div>
+                    <div><span class='three-1' id='space'>X</span></div>
+                    <div><span class='three-2' id='space'>X</span></div>
+                    <div><span class='three-3' id='space'>X</span></div>
+                    <div><span class='three-4' id='space'>X</span></div>
+                    <div class='dots4'>
+                        <div class='one1'>X</div>
+                        <div class='one2'>X</div>
+                        <div class='one3'>X</div>
+                        <div class='one4'>X</div>
+                    </div>
+                    <div><span class='four-1' id='space'>X</span></div>
+                    <div><span class='four-2' id='space'>X</span></div>
+                    <div><span class='four-3' id='space'>X</span></div>
+                    <div><span class='four-4' id='space'>X</span></div>
+                    <div class='dots5'>
+                        <div class='one1'>X</div>
+                        <div class='one2'>X</div>
+                        <div class='one3'>X</div>
+                        <div class='one4'>X</div>
+                    </div>
+                    <div><span class='five-1' id='space'>X</span></div>
+                    <div><span class='five-2' id='space'>X</span></div>
+                    <div><span class='five-3' id='space'>X</span></div>
+                    <div><span class='five-4' id='space'>X</span></div>
+                    <div class='dots6'>
+                        <div class='one1'>X</div>
+                        <div class='one2'>X</div>
+                        <div class='one3'>X</div>
+                        <div class='one4'>X</div>
+                    </div>
+                    <div><span class='six-1' id='space'>X</span></div>
+                    <div><span class='six-2' id='space'>X</span></div>
+                    <div><span class='six-3' id='space'>X</span></div>
+                    <div><span class='six-4' id='space'>X</span></div>
+                    <div class='dots7'>
+                        <div class='one1'>X</div>
+                        <div class='one2'>X</div>
+                        <div class='one3'>X</div>
+                        <div class='one4'>X</div>
+                    </div>
+                    <div><span class='seven-1' id='space'>X</span></div>
+                    <div><span class='seven-2' id='space'>X</span></div>
+                    <div><span class='seven-3' id='space'>X</span></div>
+                    <div><span class='seven-4' id='space'>X</span></div>
+                    <div class='dots8'>
+                        <div class='one1'>X</div>
+                        <div class='one2'>X</div>
+                        <div class='one3'>X</div>
+                        <div class='one4'>X</div>
+                    </div>
+                    <div><span class='eight-1' id='space'>X</span></div>
+                    <div><span class='eight-2' id='space'>X</span></div>
+                    <div><span class='eight-3' id='space'>X</span></div>
+                    <div><span class='eight-4' id='space'>X</span></div>
+                </div>
+            </div>
+        
+            <div class='bottom'>
+                <span class='red' id='color'>X</span>
+                <span class='yellow' id='color'>X</span>
+                <span class='green' id='color'>X</span>
+                <span class='blue' id='color'>X</span>
+                <span class='black' id='color'></span>
+                <span class='delete'>X</span>
+                <span class='submit'>√</span>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#">Aviso legal</a>
+            <a href="#">Política de privacidad</a>
+            <a href="#">Términos y condiciones</a>
+        </div>
+    </footer>
+</html>

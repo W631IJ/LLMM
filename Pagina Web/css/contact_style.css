@@ -1,0 +1,74 @@
+* {
+    margin: 0px;
+    padding: 1px;
+    box-sizing: border-box;
+    gap: 30px;
+}
+
+header {
+    background-color: wheat;
+    width: 100%;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 50px;
+    color: #000;
+}
+
+ul {
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px;
+    width: 120px;
+    height: 30px;
+    border: 1px solid #000;
+    color: #fff;
+    background-color: #000;
+}
+
+li a:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+/*ESta parte sirve para hcer el menú desplegable */
+nav li ul {
+    display: none;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+nav li:hover ul {
+    display: block;
+}
+
+
+
+footer {
+    background-color: wheat;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: ;
+    bottom: 0px;
+    width: 100%;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer div a {
+    color: black;
+    text-decoration: none;
+}

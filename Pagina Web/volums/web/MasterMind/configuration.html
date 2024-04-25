@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ca-ES">
+  <head>
+    <meta charset="utf-8">
+    <title>Configuració</title>
+    <link rel="stylesheet" type="text/css" href="/Pagina Web/css/configuration_style.css">
+  </head>
+  <header>
+    <h1>THE MASTERMIND GAME</h1>
+    <nav>
+      <ul>
+        <li><a href="game.html">Game</a></li>
+        <li><a href="help.html">Help</a></li>
+        <li><a href="configuration.html">Configuration</a></li>
+        <li><a href="#">Empresa</a>
+          <ul>
+            <li><a href="contacte.html">Contacto</a></li>
+            <li><a href="mapa.html">Mapa</a></li>
+            <li><a href="others.html">Others</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <body>
+  
+    <h1>Settings</h1>
+    <form action="configuration.php" method="get">
+      <label for="language"><b>Idioma:</b></label>
+      <select id="language" name="language">
+          <option value="es">Español</option>
+          <option value="en">Ingles</option>
+          <option value="ca">Catalán</option>
+          <option value="ca">Alemán</option>
+          <option value="ca">Francés</option>
+      </select>
+    
+      <label for="boardSize">Dimensiones de la tabla:</label>
+      <input type="number" id="boardSize" name="boardSize" min="3" max="10" value="3">
+    
+      <label for="bgColor">Color de fondo</label>
+      <input type="color" id="bgColor" name="bgColor" value="#EAC435">
+      <br>
+      <br>
+      
+      <label for="ballColor1">Color de la bola 1:</label>
+      <input type="color" id="ballColor1" name="ballColor1" value="#345995">
+    
+      <label for="ballColor2">Color de la bola 2:</label>
+      <input type="color" id="ballColor2" name="ballColor2" value="#E40066">
+      
+    
+      <label for="ballColor3">Color de bola 3:</label>
+      <input type="color" id="ballColor3" name="ballColor3" value="#03CEA4">
+      <br>
+      <br> 
+      <input type="submit" value="Guardar Configuración" >
+    
+    </form>
+    
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="#">Aviso legal</a>
+        <a href="#">Política de privacidad</a>
+        <a href="#">Términos y condiciones</a>
+      </div>
+    </footer>
+  </body>
+</html>
